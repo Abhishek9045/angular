@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ticketmanagement"
+    }
+  },
+  "defaultProject": "ticketmanagement",
+  "cli": {
+    "analytics": "f216d813-e89b-49f3-93e5-d813a8d3427b"
+  }
 }

@@ -1,0 +1,35 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div>
+            <h1 class="navbar-brand">Nagarro</h1>
+        </div>
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+            <li><a href="https://www.nagarro.com/en" class="nav-link">Nagarro</a></li>
+            <li><a href="https://news.google.com/covid19/map?hl=en-IN&gl=IN&ceid=IN%3Aen" routerLinkActive="active"  class="nav-link">Want to know more about Covid-19!</a></li>
+        </ul>
+        
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+            <li><a href="" class="nav-link">Welcome Page</a></li>
+        </ul>
+    </nav>
+
+</header>
+ 
+
+  <form class="box" action="login" method="get">
+    <h1>Login</h1>
+    <div class="alert alert-warning" *ngIf = "invelid">{{errorMessage}}</div>
+    <input type="text" placeholder ="Username" required name="username" [(ngModel)]= "adminusername">
+    <input type="password"  placeholder ="Password"  name="password" required [(ngModel)]="adminpassword">
+    <input type="submit" value ="Login" (click) = (adminLogin())><br>
+    <a href ="Registor.html" >new user?</a>
+    <a href ="Forget.html">forget password</a>
+    
+    </form>	
+
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted"> © 2020 Nagarro </span> 
+        </div>
+    </footer>

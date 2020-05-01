@@ -1,0 +1,75 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div>
+            <h1 class="navbar-brand">Nagarro</h1>
+        </div>
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+            <li><a routerLink="/userdashboard" routerLinkActive="active"  class="nav-link">Home</a></li>
+            <li><a routerLink="/ticketlist" routerLinkActive="active"  class="nav-link">Ticket List</a></li>
+            <li><a href="https://www.nagarro.com/en" class="nav-link">Nagarro</a></li>
+            <li><a href="https://news.google.com/covid19/map?hl=en-IN&gl=IN&ceid=IN%3Aen" routerLinkActive="active"  class="nav-link">Want to know more about Covid-19!</a></li>
+        </ul>
+        
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+            <li><a href="" class="nav-link">Log out</a></li>
+        </ul>
+    </nav>
+
+</header>
+<br>
+
+<h1 class="container">Welcome {{user}}!</h1>
+<br>
+<h2 class="container">Ticket Book</h2>
+<br>
+<div class="container">
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Ticket Type</th>
+                <th>Description</th>
+                <th>Book Ticket</th>
+            </tr>
+            
+        </thead>
+        
+        <tbody>
+
+            <tr>
+                <td>Travel Tickets</td>
+                <td>Book tickets for travel!</td>
+                <td><button class="btn btn-success">Book</button></td>
+            </tr>
+            <br>
+            <tr>
+                <td>Hotel Stay</td>
+                <td>Book tickets for hotel stay!</td>
+                <td><button class="btn btn-success">Book</button></td>
+            </tr>
+            <br>
+            <tr>
+                <td>Visa</td>
+                <td>Book tickets for visa!</td>
+                <td><button class="btn btn-success">Book</button></td>
+            </tr>
+            <br>
+            <tr>
+                <td>Work Permit</td>
+                <td>Book tickets for work permit!</td>
+                <td><button class="btn btn-success">Book</button></td>
+            </tr>
+        </tbody>
+
+
+
+    </table>
+
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <span class="text-muted"> Rights Reserved 2018 @Nagarro </span> 
+    </div>
+</footer>

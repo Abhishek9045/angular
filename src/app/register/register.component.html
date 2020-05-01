@@ -1,0 +1,42 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div>
+            <h1 class="navbar-brand">Nagarro</h1>
+        </div>
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+            <li><a href="/userlogin" class="nav-link">Login</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<div class="container">
+    <h1>Registration</h1>
+    First Name: <input id="firstname" name="name" class="form-control"
+      required minlength="4" appForbiddenName="bob"
+      [(ngModel)]="firstname" #name="ngModel" ngModel pattern="[a-zA-Z ]*" >
+
+      <div *ngIf="name.invalid && (name.dirty || name.touched)"
+    class="alert alert-danger">
+
+  <div *ngIf="name.errors.required">
+    Name is required.
+  </div>
+  <div *ngIf="name.errors.minlength">
+    Name must be at least 4 characters long.
+  </div>
+  <div *ngIf="name.errors.forbiddenName">
+    Name cannot be Bob.
+  </div>
+  <div *ngif=""></div>
+
+</div>
+
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <span class="text-muted"> Rights Reserved 2018 @Nagarro </span> 
+    </div>
+</footer>
